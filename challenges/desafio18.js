@@ -1,12 +1,12 @@
 db.produtos.updateMany({
     nome: {
-        $in: ['Big Mac', 'Quarteirão com Queijo']
-    }
+        $in: ["Big Mac", "Quarteirão com Queijo"],
+    },
 },
 {
     $push: {
-        ingredientes: 'bacon'
-    }
+        ingredientes: "bacon",
+    },
 });
 
-db.produtos.find().projection({ _id: false, nome: true, ingredientes: true});
+db.produtos.find().projection({ _id: false, nome: true, ingredientes: true });

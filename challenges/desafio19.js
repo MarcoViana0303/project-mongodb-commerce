@@ -1,7 +1,7 @@
 db.produtos.updateMany({}, {
     $pull: {
-        ingredientes: 'cebola'
-    }
+        ingredientes: "cebola",
+    },
 });
 
-db.produtos.find().projection({ _id: false, nome: true, ingredientes: true })
+db.produtos.find().projection({ _id: false, nome: true, ingredientes: true });

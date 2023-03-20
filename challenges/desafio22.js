@@ -1,27 +1,27 @@
-//1
+// 1
 db.produtos.updateMany({}, {
     $set: { 
-      vendasPorDia: [0, 0, 0, 0, 0, 0, 0]
-       }
+      vendasPorDia: [0, 0, 0, 0, 0, 0, 0],
+       },
   });
   
   // 2
   db.produtos.updateOne({
-      nome: 'Big Mac'
+      nome: "Big Mac",
   }, {
       $inc: {
-          'vendasPorDia.3': 60
-      }
-  })
+          "vendasPorDia.3": 60,
+      },
+  });
   
   // 3
   db.produtos.updateMany({
-      tags: 'bovino'
+      tags: "bovino",
   }, {
       $inc: {
-          'vendasPorDia.6': 120
-      }
-  })
+          "vendasPorDia.6": 120,
+      },
+  });
   
   // Query 4
   db.produtos.find().projection({ _id: false, nome: true, vendasPorDia: true });
