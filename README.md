@@ -2,6 +2,10 @@
 
 Nesse projeto, trabalhei com o banco de dados commerce, que contém dados do cardápio do McDonald's, como ingredientes, valores nutricionais e dados fictícios de vendas. Durante o mesmo, o principal objetivo foi criar uma série de queries para atender cada requisito proposto. Para isso, utilizei diversos cursores e técnicas de adição, remoção e atualização de dados no banco de dados. Através da minha experiência com o MongoDB, consegui aplicar as melhores práticas para garantir a eficiência e precisão das minhas queries. Foi um desafio muito gratificante, que me permitiu aprimorar minhas habilidades em gerenciamento de dados e desenvolvimento de queries.
 
+## Referência
+
+- [MongoDB](https://www.mongodb.com/)
+
 ## Requisitos exigidos no projeto
 1. [x] 1. Retorne a quantidade de documentos inseridos na coleção produtos
 2. [x] 2. Ordene a coleção produtos pela quantidade de lanches vendidos em ordem crescente, mostrando apenas o nome e a quantidade de lanches vendidos
